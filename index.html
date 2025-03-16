@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Michiko Keyzka</div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#portfolio">Project</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <img src="img/formal2.jpg" alt="Profile Picture">
+            <h1>Michiko Keyzka Salsabil Qorib</h1>
+            <p>Creative Developer | Designer </p>
+            <a href="CV_Michiko_Keyzka_Salsabil_Qorib.pdf" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/kelautan.png" alt="Project 1">
+                <p>This is one of the first group projects for class X, creating a website about marine affairs.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/In Game.png" alt="Project 2">
+                <p>Project to create a desktop game using Unity software.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/eperpus.jpg" alt="Project 3">
+                <p>In this project, I created a website about E-Library. However, my job description here is as a UI/UX Designer..</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/shoyou.png" alt="Project 4">
+                <p>Shoyou is an E-Commerce Application Design project which is also structured by DFD, DCD, and ERD.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/medcare.png" alt="Project 4">
+                <p>MedCare is the first project on UI/UX Design with Figma. MedCare is a health system application.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/fluentify.png" alt="Project 4">
+                <p>Fluentify is the second project in using Figma. Fluentify is a foreign language learning application.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications" id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certifications-item">
+                <img src="img/sertif1.jpg" alt="Certification 1">
+                <p>Was in top 3 in my class.</p>
+            </div>
+            <div class="certifications-item">
+                <img src="img/sertif2.jpg" alt="Certification 2">
+                <p>Was chosen as an ANBK participant.</p>
+            </div>
+            <div class="certifications-item">
+                <img src="img/sertif3.jpg" alt="Certification 3">
+                <p>A certification of industrial visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack" id="skills">
+        <h2>Tech Stack & Tools</h2>
+        <div class="stack-container">
+            <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="React">
+                <p>Github</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://icongr.am/devicon/bootstrap-plain.svg?size=128&color=7800f0" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://icongr.am/devicon/illustrator-line.svg?size=128&color=ffae00" alt="illustrator-line">
+                <p>Illustrator</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://icongr.am/devicon/java-original-wordmark.svg?size=128&color=ffae00" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="stack-item">
+                <img src="https://icongr.am/devicon/python-original.svg?size=128&color=ffae00" alt="Python">
+                <p>Python</p>
+            </div>
+
+
+        </div>
+    </section>    
+
+
+
+    <footer class="footer" id="footer">
+        <p>&copy; <span id="year"></span> Michiko Keyzka. All rights reserved.</p>
+        <p>Let's get in touch with me by :</p>
+        <a href="https://www.instagram.com/mchkyzka/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/michiko-keyzka-salsabil-qorib-43b475354/overlay/contact-info/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BXmAmdTNvTiGuClcEVziaKA%3D%3D" target="_blank">LinkedIn</a>
+        <a href="mailto:mchkyzka@gmail.com" target="_blank">Email</a>
+        <a href="https://github.com/mchkyzka" target="_blank">GitHub</a>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".stack-item");
+
+    function checkScroll() {
+        items.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                item.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Trigger pertama
+});
+
+
+    </script>
+
+</body>
+</html>
